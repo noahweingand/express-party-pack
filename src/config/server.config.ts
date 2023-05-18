@@ -6,5 +6,9 @@ if (process.env.ENV === 'local') {
 
 const name = process.env.NAME;
 const port = process.env.PORT;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 
-export { name, port };
+if (!supabaseUrl || !supabaseAnonKey) throw new Error('Supabase environment variables not set');
+
+export { name, port, supabaseUrl, supabaseAnonKey };

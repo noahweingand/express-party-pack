@@ -13,6 +13,7 @@
     "start": "node ./dist/server.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.22.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "helmet": "^7.0.0",
@@ -38,6 +39,7 @@
     "pino-pretty": "^10.0.0",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
+    "supabase": "^1.61.3",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   }

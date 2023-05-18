@@ -7,18 +7,16 @@
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
-    "plugin:jest/recommended",
     "plugin:security/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint", "import", "simple-import-sort", "jest", "security", "prettier"],
+  "plugins": ["@typescript-eslint", "import", "simple-import-sort", "security", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018
   },
   "rules": {
     "no-console": "error",
-    "jest/expect-expect": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -33,6 +31,7 @@
       {
         "groups": [
           ["^\\u0000"],
+          ["^@?\\w"],
           ["^[a-zA-Z]"],
           ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
           ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]

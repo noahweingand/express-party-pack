@@ -1,6 +1,7 @@
 import { Router } from 'express';
 
 import healthRoute from './health.route';
+import invoicesRoutes from './invoices.route';
 
 const router = Router();
 
@@ -8,6 +9,10 @@ const routes = [
   {
     path: '/health',
     route: healthRoute,
+  },
+  {
+    path: '/invoices',
+    route: invoicesRoutes,
   },
 ];
 
