@@ -1,7 +1,6 @@
 import express from 'express';
 
-import { name, port } from './config/server.config';
-import { log } from './config';
+import { log, name, port } from './config';
 import { useMiddlewares } from './middlewares';
 import routes from './routes';
 
