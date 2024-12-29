@@ -1,10 +1,4 @@
-import dotenv from 'dotenv';
+const APP_NAME = process.env.APP_NAME || 'express-party-pack';
+const PORT = process.env.PORT || 3000;
 
-if (process.env.ENV === 'local') {
-  dotenv.config();
-}
-
-const name = process.env.NAME;
-const port = process.env.PORT;
-
-export { name, port };
+export { APP_NAME, PORT };

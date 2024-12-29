@@ -1,6 +1,6 @@
 import Pino from 'pino';
 
-import { name as serverName } from './server.config';
+import { APP_NAME } from './server.config';
 
 export function getLogOptions(name: string) {
   return {
@@ -20,7 +20,7 @@ let pinoLogger: Pino.BaseLogger | undefined;
 
 export function logger() {
   if (!pinoLogger) {
-    return Pino(getLogOptions(serverName as string));
+    return Pino(getLogOptions(APP_NAME));
   }
 
   return pinoLogger;

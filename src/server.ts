@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { log, name, port } from './config';
+import { APP_NAME, log, PORT } from './config';
 import { useMiddlewares } from './middlewares';
 import routes from './routes';
 
@@ -9,6 +9,6 @@ const app = express();
 useMiddlewares(app);
 app.use(routes);
 
-app.listen(port, () => {
-  log().info(`${name} listening on port ${port}`);
+app.listen(PORT, () => {
+  log().info(`${APP_NAME} listening on port ${PORT}`);
 });
