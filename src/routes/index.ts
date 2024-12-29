@@ -1,12 +1,12 @@
-import { Router } from 'express';
+import { Router } from "express";
 
-import healthRoute from './health.route';
+import healthRoute from "./health.route";
 
 const router = Router();
 
 const routes = [
   {
-    path: '/health',
+    path: "/health",
     route: healthRoute
   }
 ];

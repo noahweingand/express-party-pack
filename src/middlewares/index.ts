@@ -1,7 +1,7 @@
-import express, { type Express } from 'express';
-import helmet from 'helmet';
+import express, { type Express } from "express";
+import helmet from "helmet";
 
-import useLogger from './logger.middleware';
+import useLogger from "./logger.middleware";
 
 export function useMiddlewares(app: Express) {
   app.use(helmet());

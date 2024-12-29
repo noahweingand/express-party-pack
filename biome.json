@@ -34,18 +34,17 @@
       },
       "suspicious": { "noConsoleLog": "error", "useAwait": "error" }
     },
-    "ignore": ["/node_modules/", "/coverage/", "/dist/", "/.DS_Store"]
+    "ignore": ["node_modules", "coverage", "dist", ".DS_Store"]
   },
   "javascript": {
     "formatter": {
-      "jsxQuoteStyle": "double",
       "quoteProperties": "asNeeded",
       "trailingCommas": "none",
       "semicolons": "always",
       "arrowParentheses": "always",
       "bracketSpacing": true,
       "bracketSameLine": false,
-      "quoteStyle": "single",
+      "quoteStyle": "double",
       "attributePosition": "auto"
     }
   }

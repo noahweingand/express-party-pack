@@ -1,11 +1,11 @@
-import Pino from 'pino';
+import Pino from "pino";
 
-import { APP_NAME } from './server.config';
+import { APP_NAME } from "./server.config";
 
 export function getLogOptions(name: string) {
   return {
     name,
-    messageKey: 'data',
+    messageKey: "data",
     formatters: {
       level(label: string) {
         // Override log level number to be label instead
