@@ -1,1 +1,3 @@
-export * from './health.controller';
+import { health } from './health.controller';
+
+export { health };

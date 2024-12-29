@@ -7,12 +7,12 @@ const router = Router();
 const routes = [
   {
     path: '/health',
-    route: healthRoute,
-  },
+    route: healthRoute
+  }
 ];
 
-routes.forEach(({ path, route }) => {
+for (const { path, route } of routes) {
   router.use(path, route);
-});
+}
 
 export default router;

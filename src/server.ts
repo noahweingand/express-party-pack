@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { APP_NAME, log, PORT } from './config';
+import { APP_NAME, PORT, log } from './config';
 import { useMiddlewares } from './middlewares';
 import routes from './routes';
 

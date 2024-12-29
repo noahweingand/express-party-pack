@@ -10,9 +10,9 @@ export function getLogOptions(name: string) {
       level(label: string) {
         // Override log level number to be label instead
         return { level: label };
-      },
+      }
     },
-    base: undefined, // Adds PID and Hostname to logs by default
+    base: undefined // Adds PID and Hostname to logs by default
   };
 }
 
