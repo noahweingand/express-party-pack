@@ -1,18 +1,10 @@
 import { Router } from "express";
 
-import healthRoute from "./health.route";
+import * as operations from "../operations";
 
 const router = Router();
 
-const routes = [
-  {
-    path: "/health",
-    route: healthRoute
-  }
-];
-
-for (const { path, route } of routes) {
-  router.use(path, route);
-}
+router.get("/health", operations.health);
+router.get("/v1/users/:id", operations.getUser);
 
 export default router;

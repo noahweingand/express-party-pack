@@ -34,7 +34,7 @@
       },
       "suspicious": { "noConsoleLog": "error", "useAwait": "error" }
     },
-    "ignore": ["node_modules", "coverage", "dist", ".DS_Store"]
+    "ignore": ["coverage", "dist", "node_modules", ".DS_Store", "src/types/generated/*"]
   },
   "javascript": {
     "formatter": {

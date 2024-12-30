@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: Express Party Pack
+  description: A production-grade Express template
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000/v1
+    description: Local testing
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        age:
+          type: integer
+        hobbies:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+
+paths:
+  /users/{id}:
+    get:
+      summary: Retrieves a user
+      parameters:
+        - name: id
+          in: path
+          description: User Identifier
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: A user object
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
